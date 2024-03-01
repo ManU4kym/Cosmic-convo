@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.grey[900],
-        primaryColor: Colors.deepPurple.shade400,
+        primaryColor: const Color.fromARGB(255, 40, 34, 59),
       ),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
