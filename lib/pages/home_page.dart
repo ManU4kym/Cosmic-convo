@@ -23,8 +23,28 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              height: 120,
-              color: Colors.red,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              height: 100,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Cosmic Convo',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white.withOpacity(0.9),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.image_search,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
             ),
             Expanded(child: ListView()),
             Container(
@@ -33,6 +53,10 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Expanded(
                     child: TextField(
+                      style: const TextStyle(
+                        color: Colors.black,
+                      ),
+                      cursorColor: Theme.of(context).primaryColor,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(100),
@@ -48,6 +72,23 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+                  const SizedBox(
+                    width: 12,
+                  ),
+                  const CircleAvatar(
+                    radius: 32,
+                    backgroundColor: Colors.white,
+                    child: CircleAvatar(
+                      radius: 30,
+                      backgroundColor: Color.fromARGB(255, 81, 70, 101),
+                      child: Center(
+                        child: Icon(
+                          Icons.send,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),

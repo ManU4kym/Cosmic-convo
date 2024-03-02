@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     ));
     return MaterialApp(
       theme: ThemeData(
+        fontFamily: 'SixtyFour',
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.grey[900],
         primaryColor: const Color.fromARGB(255, 40, 34, 59),
