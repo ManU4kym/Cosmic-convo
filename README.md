@@ -27,20 +27,22 @@ Before you begin, ensure you have the following prerequisites installed:
 1. Clone the repository:
 
     
-    git clone https://github.com/ManU4kym/Cosmic-convo.git
+    
     ```
+    git clone https://github.com/ManU4kym/Cosmic-convo.git
 
 2. Navigate to the project directory:
 
     
-    cd ai-message-generator
     ```
+    cd ai-message-generator
 
 3. Install dependencies:
 
     
-    flutter pub get
+   
     ```
+     flutter pub get
 
 ## Usage
 

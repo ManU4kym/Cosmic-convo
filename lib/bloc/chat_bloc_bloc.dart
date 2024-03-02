@@ -1,5 +1,6 @@
 import 'package:ai_generator/models/chat_message.dart';
 import 'package:bloc/bloc.dart';
+import 'package:meta/meta.dart';
 
 part 'chat_bloc_event.dart';
 part 'chat_bloc_state.dart';
